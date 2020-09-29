@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "hspaone"
+  },
+  "targets": {
+    "hspaone": {
+      "hosting": {
+        "my-app": [
+          "hspaone"
+        ]
+      }
+    }
+  }
+}
