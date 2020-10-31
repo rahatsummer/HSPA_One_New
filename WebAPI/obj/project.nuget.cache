@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+k0isWPUDaZyvQncTIQDspth4m8bMEy0uzHZ6zWLBe8juA1DUSVFb/zQ4jMuhi7Fq4yD1FpFQNGnpF4+jhZmLw==",
+  "dgSpecHash": "N3GdlfO37atpM4jBJdjd/0DupPdDRjdhDVsfHdYv30af9HmlpQ++05/SKmyCevFVvWirGw0fQEDAkhzADsVg2w==",
   "success": true,
-  "projectFilePath": "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj",
+  "projectFilePath": "C:\\Angular9\\HSPAOne\\WebApi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MD\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

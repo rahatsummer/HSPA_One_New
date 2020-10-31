@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebAPI.Models
@@ -8,5 +9,9 @@ namespace WebAPI.Models
         
         [Required]
         public string Name {get;set;}
+
+        public DateTime LastUpdated {get;set;}
+
+        public int LastUpdatedBy {get;set;}
     }
 }
