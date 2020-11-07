@@ -1,3 +1,7 @@
+
+
+
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,8 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WebAPI.Data;
-
+using WebAPI.Helpers;
 using WebAPI.Interfaces;
+
 
 namespace WebAPI
 {
@@ -26,6 +31,8 @@ namespace WebAPI
             => options.UseSqlServer(Configuration.GetConnectionString("Default")));
             services.AddControllers();
             services.AddCors();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+         
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 

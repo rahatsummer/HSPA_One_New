@@ -59,3 +59,5 @@ C:\Angular9\HSPAOne\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2
 C:\Angular9\HSPAOne\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Angular9\HSPAOne\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Angular9\HSPAOne\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CopyComplete
+C:\Angular9\HSPAOne\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Angular9\HSPAOne\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
