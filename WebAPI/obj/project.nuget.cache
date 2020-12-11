@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O0MjfA49e3DX6qwlAVxoNvP/5cBPmOCZg/4x4XZUPpNSPNlVC13R5EGBJT7oi85D614wDNhh/pTxXyx9AxKL9g==",
+  "dgSpecHash": "pUUpqw4aurx/fJ8kxQtVCmXdHYVh7BNKIpA2UaTh4Gnhsuv8OcyYPkGrNjx4TRzy0iG021duJezIBUo7cZdHAw==",
   "success": true,
-  "projectFilePath": "C:\\Angular9\\HSPAOne\\WebAPi\\WebAPI.csproj",
+  "projectFilePath": "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MD\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
