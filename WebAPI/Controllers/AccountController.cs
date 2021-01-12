@@ -1,16 +1,24 @@
+using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using WebAPI.Dtos;
 using WebAPI.Interfaces;
-
+using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
     public class AccountController : BaseController
     {
         private readonly IUnitOfWork uow;
-        public AccountController(IUnitOfWork uow)
+        private readonly IConfiguration configuration;
+        public AccountController(IUnitOfWork uow, IConfiguration configuration)
         {
+            this.configuration = configuration;
             this.uow = uow;
 
         }
@@ -28,9 +36,42 @@ namespace WebAPI.Controllers
 
             var loginRes = new LoginResponseDto();
             loginRes.UserName = user.Username;
-            loginRes.Token = "Token to be generated";
+            loginRes.Token = CreateJWT(user);
 
             return Ok(loginRes);
         }
+
+        private string CreateJWT(User user)
+        {
+           var secretKey = configuration.GetSection("AppSettings:key").Value;
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8
+                     .GetBytes(secretKey));
+         
+         var claims = new Claim [] {
+             new Claim(ClaimTypes.Name,user.Username),
+             new Claim(ClaimTypes.NameIdentifier,user.Id.ToString())
+         };
+
+         var signinCredentials = new SigningCredentials(
+             key,SecurityAlgorithms.HmacSha256Signature);
+
+        var tokenDescriptor = new SecurityTokenDescriptor{
+            Subject = new ClaimsIdentity(claims),
+            Expires = DateTime.UtcNow.AddDays(10),
+            SigningCredentials = signinCredentials
+
+        };
+
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
+        }
+
+        
+        
+
+
+        
     }
 }

@@ -2,7 +2,9 @@
 
 
 
+using System.Text;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 
 using Microsoft.AspNetCore.Hosting;
@@ -10,7 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using Microsoft.IdentityModel.Tokens;
 using WebAPI.Data;
 using WebAPI.Extensions;
 using WebAPI.Helpers;
@@ -38,6 +40,22 @@ namespace WebAPI
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
          
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            var secretKey = Configuration.GetSection("AppSettings:Key").Value;
+
+              var key = new SymmetricSecurityKey(Encoding.UTF8
+                     .GetBytes(secretKey));
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                            .AddJwtBearer( opt => {
+                                opt.TokenValidationParameters = new TokenValidationParameters
+                                {
+                                    ValidateIssuerSigningKey = true,
+                                    ValidateIssuer = false,
+                                    ValidateAudience = false,
+                                    IssuerSigningKey = key
+                                };
+                            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +68,8 @@ namespace WebAPI
             app.UseRouting();
 
             app.UseCors(m => m.AllowAnyOrigin().AllowAnyHeader().AllowAnyOrigin());
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

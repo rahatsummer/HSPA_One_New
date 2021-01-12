@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj": {}
+    "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj": {
+    "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj",
+        "projectPath": "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\MD\\.nuget\\packages\\",
-        "outputPath": "C:\\Angular9\\HSPAOne\\Webapi\\obj\\",
+        "outputPath": "C:\\Angular9\\HSPAOne\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -44,6 +44,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",

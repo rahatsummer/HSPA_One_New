@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pUUpqw4aurx/fJ8kxQtVCmXdHYVh7BNKIpA2UaTh4Gnhsuv8OcyYPkGrNjx4TRzy0iG021duJezIBUo7cZdHAw==",
+  "dgSpecHash": "6PeHns/MwOfeU8XTlz6qPQS96AoBu1kZWgzhzeX/KxMd2EsG6Roi13ObKYzvaUj72f3fO5r/1hFMhcy0Yfnjng==",
   "success": true,
-  "projectFilePath": "C:\\Angular9\\HSPAOne\\Webapi\\WebAPI.csproj",
+  "projectFilePath": "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MD\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "C:\\Users\\MD\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.8\\microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.8\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.8.nupkg.sha512",
     "C:\\Users\\MD\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
