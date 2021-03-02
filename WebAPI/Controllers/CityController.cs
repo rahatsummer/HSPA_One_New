@@ -36,35 +36,16 @@ namespace WebAPI.Controllers
         [HttpGet("")]
         public async Task<IActionResult> GetCities()
         {
-            //throw new UnauthorizedAccessException();
+           
             var cities = await uow.CityRepository.GetCitiesAsync();
 
             var citiesDto = mapper.Map<IEnumerable<CityDto>>(cities);
 
-            // var citiesDto = from c in cities
-            //                 select new CityDto()
-            //                 {
-            //                     Id = c.Id,
-            //                     Name = c.Name,
-            //                 };
+           
             return Ok(citiesDto);
         }
 
-        // POST api/city/add?cityname=Miami
-        // POST api/city/add/Los Angles
-        // [HttpPost("add")]
-        // [HttpPost("add/{cityname}")]
-
-        // public async Task<IActionResult> AddCity(string cityName)
-        // {
-        //     City city = new City();
-        //     city.Name = cityName;
-        //     await dc.Cities.AddAsync(city);
-        //     await dc.SaveChangesAsync();
-        //     return Ok(city);
-        // }
-
-        // POST api/city/post -- post the data in json format
+     
 
         [HttpPost("post")]
         public async Task<IActionResult> AddCity(CityDto cityDto)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj": {}
+    "C:\\Angular9\\HSPAOne\\WEBAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj": {
+    "C:\\Angular9\\HSPAOne\\WEBAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Angular9\\HSPAOne\\WEBAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Angular9\\HSPAOne\\webapi\\WebAPI.csproj",
+        "projectPath": "C:\\Angular9\\HSPAOne\\WEBAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\MD\\.nuget\\packages\\",
-        "outputPath": "C:\\Angular9\\HSPAOne\\webapi\\obj\\",
+        "outputPath": "C:\\Angular9\\HSPAOne\\WEBAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
