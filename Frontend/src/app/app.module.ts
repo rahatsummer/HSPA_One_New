@@ -29,55 +29,55 @@ import { SortPipe } from './Pipes/sort.pipe';
 
 
 const appRoutes: Routes = [
-  { path: '', component : PropertyListComponent},
-  { path: 'rent-property', component : PropertyListComponent},
-  { path: 'property-detail/:id',
-           component : PropertyDetailComponent,
-            resolve: {prp: PropertyDetailResolverService}},
-  { path: 'add-property', component : AddPropertyComponent},
-  { path: 'user/login', component : UserLoginComponent},
-  { path: 'user/register', component : UserRegisterComponent},
-  { path: '**', component : PropertyListComponent}
+    { path: '', component : PropertyListComponent},
+    { path: 'rent-property', component : PropertyListComponent},
+    { path: 'property-detail/:id',
+        component : PropertyDetailComponent,
+        resolve: {prp: PropertyDetailResolverService}},
+    { path: 'add-property', component : AddPropertyComponent},
+    { path: 'user/login', component : UserLoginComponent},
+    { path: 'user/register', component : UserRegisterComponent},
+    { path: '**', component : PropertyListComponent}
 ];
 
 @NgModule({
-   declarations: [
-      AppComponent,
+    declarations: [
+        AppComponent,
 
-      NavBarComponent,
-      PropertyCardComponet,
-      PropertyListComponent,
-      AddPropertyComponent,
-      PropertyDetailComponent,
+        NavBarComponent,
+        PropertyCardComponet,
+        PropertyListComponent,
+        AddPropertyComponent,
+        PropertyDetailComponent,
 
-      UserRegisterComponent,
-      UserLoginComponent,
-      FilterPipe,
-      SortPipe
+        UserRegisterComponent,
+        UserLoginComponent,
+        FilterPipe,
+        SortPipe
 
-   ],
-   imports: [
-      BrowserModule,
-      HttpClientModule,
-      FormsModule,
-      ReactiveFormsModule,
-      RouterModule.forRoot(appRoutes),
-      BrowserAnimationsModule,
-      BsDropdownModule.forRoot(),
-      TabsModule.forRoot(),
-      ButtonsModule.forRoot(),
-      BsDatepickerModule.forRoot(),
-      NgxGalleryModule
-   ],
-   providers: [
-     HousingService,
-     UserServiceService,
-     AlertifyService,
-     AuthService,
-     PropertyDetailResolverService
-   ],
-   bootstrap: [
-      AppComponent
-   ]
+    ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot(appRoutes),
+        BrowserAnimationsModule,
+        BsDropdownModule.forRoot(),
+        TabsModule.forRoot(),
+        ButtonsModule.forRoot(),
+        BsDatepickerModule.forRoot(),
+        NgxGalleryModule
+    ],
+    providers: [
+        HousingService,
+        UserServiceService,
+        AlertifyService,
+        AuthService,
+        PropertyDetailResolverService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }

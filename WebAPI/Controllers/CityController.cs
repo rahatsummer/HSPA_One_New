@@ -42,7 +42,7 @@ namespace WebAPI.Controllers
             var citiesDto = mapper.Map<IEnumerable<CityDto>>(cities);
 
            
-            return Ok(citiesDto);
+            return Ok(citiesDto); 
         }
 
      
